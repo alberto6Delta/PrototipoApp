@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Restaurar contraseña</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -21,26 +21,21 @@
         <img id="logo" src="./imagenes/logo2.png" alt="Logotipo empresarial" onload="ajustaImg()">
       </div>
       <div class="saludo">
-        <p>¡Hola! bienvenidos a XXXXXXX para ingresar es necesario iniciar sesi&oacute;n.</p>
+        <p>Por favor ingresa tu correo electrónico o número de cliente</p>
       </div>
       <div class="formularioLogin">
         <form>
           <fieldset class="form-group">
-            <label for="usuario" class="login-font bmd-label-floating">Usuario o correo electr&oacute;nico<span style="color:red;">*</span></label>
+            <label for="usuario" class="login-font bmd-label-floating">Número de cliente o correo electrónico<span style="color:red;">*</span></label>
             <input type="email" class="inputFormulario form-control" id="usuario" autocomplete="off">
-            <span class="login-font bmd-help"></span>
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="password" class="login-font bmd-label-floating">Contraseña<span style="color:red;">*</span></label>
-            <input type="password" class="inputFormulario form-control" id="password"><span id="toggle-password" class="fas fa-eye fa-3x field-icon"></span>
             <span class="login-font bmd-help"></span>
           </fieldset>
         </form>
         <div class="btnLogin">
-          <button type="button" class="btn btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Iniciar Sesi&oacute;n</button>
+          <button type="button" class="btn btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Recuperar contraseña</button>
         </div>
         <div style="font-size: 30px; margin-top:60px">
-          <p>Olvid&eacute; mi contraseña <a href="restaurarContrasena.html">¡Recuperala!</a>
+          <p>Recibirás un correo con los pasos a seguir para recuperar tu contraseña.</a>
         </div>
       </div>
     </div>
