@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  </head>
+  <body>
+    <div class="contenedor" id="contenedor">
+      <div class="logo">
+        <img id="logo" src="./imagenes/logo2.png" alt="Logotipo empresarial" onload="ajustaImg()">
+      </div>
+      <div class="saludo">
+        <p>¡Hola! bienvenidos a XXXXXXX para ingresar es necesario iniciar sesi&oacute;n.</p>
+      </div>
+      <div class="formularioLogin">
+        <form>
+          <fieldset class="form-group">
+            <label for="usuario" class="login-font bmd-label-floating">Usuario o correo electr&oacute;nico<span style="color:red;">*</span></label>
+            <input type="email" class="inputFormulario form-control" id="usuario" autocomplete="off">
+            <span class="login-font bmd-help"></span>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="password" class="login-font bmd-label-floating">Contraseña<span style="color:red;">*</span></label>
+            <input type="password" class="inputFormulario form-control" id="password"><span id="toggle-password" class="fas fa-eye fa-3x field-icon"></span>
+            <span class="login-font bmd-help"></span>
+          </fieldset>
+        </form>
+        <div class="btnLogin">
+          <button type="button" class="btn btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Iniciar Sesi&oacute;n</button>
+        </div>
+        <div style="font-size: 30px; margin-top:60px">
+          <p>Olvid&eacute; mi contraseña <a href="#!">¡Recuperala!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

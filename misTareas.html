@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./js/encabezado.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/misTareas.css">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  </head>
+  <body>
+
+    <div id="sideNavigation" class="sidenav">
+      <div class="encabezadoHamburguesa">
+        <img src="./imagenes/fotoDePerfil.png" alt="Imagen de perfil" class="fotoPerfil">
+        <label class="nombreUsuario">Nombre perfil</label>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#fff;"><</a>
+      </div>
+        <a href="inicio.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="misTareas.html"><i class="fas fa-clipboard-list"></i> Mis tareas</a>
+        <a href="#"><i class="fas fa-shipping-fast"></i> Tracking</a>
+        <a href="#"><i class="fas fa-chart-pie"></i> Gr&aacute;ficos</a>
+        <a href="#">Opci&oacute;n 5</a>
+        <a href="#">Opci&oacute;n 6</a>
+      </div>
+
+    <div class="contenedor" id="main">
+      <div class="menuSuperior" id="menuSuperior">
+        <i class="fas fa-bars" id="hamburguesa" onclick="openNav()"></i>
+        <img src="./imagenes/logo2.png" alt="Logo empresarial" id="imgLogo" onload="ajustaLogo()">
+        <div>
+          <i class="fas fa-bell" id="campana" onclick="window.location='notificaciones.html'"></i>
+          <i class="fas fa-exclamation-circle" id="numNotificaciones"></i>
+        </div>
+      </div>
+      <div class="menuAtajos">
+        <ul class="listaAtajos">
+          <li><a href="#">Atajo 1</a></li>
+          <li><a href="#">Atajo 2</a></li>
+          <li><a href="#">Atajo 3</a></li>
+        </ul>
+      </div>
+      <hr style="width: 100%; height: 5px; color: #e4b320; background-color: #e4b320; margin-top:3px; margin-bottom:3px;">
+      <div class="divBusqueda">
+        <i class="fas fa-search fa-3x"></i>
+        <a href="filtros.html">Filtrar ></a>
+      </div>
+      <div class="divContenido">
+        <table>
+          <tbody>
+            <tr>
+              <td class="foto"><img src="./imagenes/maquinaCoser.jpg" alt="Fotografía ilustrativa"></td>
+              <td class="descripcion" style="background-color: #ffe0b3;">
+                <ul style="list-style:none;">
+                  <li>Descripci&oacute;n 1</li>
+                  <li style="margin-left:90%;">></li>
+                  <li style="color: #a8a8a7;">Estatus 1</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="foto"><img src="./imagenes/xbox.jpg" alt="Fotografía ilustrativa"></td>
+              <td class="descripcion">
+                <ul style="list-style:none;">
+                  <li>Descripci&oacute;n 2</li>
+                  <li style="margin-left:90%;">></li>
+                  <li style="color: #a8a8a7;">Estatus 2</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="foto"><img src="./imagenes/antivirus.jpg" alt="Fotografía ilustrativa"></td>
+              <td class="descripcion" style="background-color: #ffe0b3;">
+                <ul style="list-style:none;">
+                  <li>Descripci&oacute;n 3</li>
+                  <li style="margin-left:90%;">></li>
+                  <li style="color: #a8a8a7;">Estatus 3</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="foto"><img src="./imagenes/audifonos.jpg" alt="Fotografía ilustrativa"></td>
+              <td class="descripcion">
+                <ul style="list-style:none;">
+                  <li>Descripci&oacute;n 4</li>
+                  <li style="margin-left:90%;">></li>
+                  <li style="color: #a8a8a7;">Estatus 4</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="foto"><img src="./imagenes/caja.jpg" alt="Fotografía ilustrativa"></td>
+              <td class="descripcion" style="background-color: #ffe0b3;">
+                <ul style="list-style:none; padding-top:10px;">
+                  <li>Descripci&oacute;n 5</li>
+                  <li style="margin-left:90%;">></li>
+                  <li style="color: #a8a8a7;">Estatus 5</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

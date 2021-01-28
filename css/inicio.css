@@ -1,0 +1,35 @@
+.menuAtajos{
+  background-color: #e0e0e0;
+  padding-top: 15px;
+}
+
+.listaAtajos{
+  list-style: none;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.listaAtajos li{
+  display: inline;
+  margin-right: 50px;
+}
+
+.listaAtajos li a{
+  color: black;
+}
+
+.menuTarjetas{
+  text-align: center;
+}
+
+.menuTarjetas button{
+  font-size: 60px;
+  background-color: #e4b320;
+  border-radius: 35px;
+  text-align: center;
+  margin: 0 auto;
+  width: 72%;
+  height: 300px;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}

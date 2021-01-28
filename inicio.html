@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="./js/encabezado.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  </head>
+  <body>
+
+    <div id="sideNavigation" class="sidenav">
+      <div class="encabezadoHamburguesa">
+        <img src="./imagenes/fotoDePerfil.png" alt="Imagen de perfil" class="fotoPerfil">
+        <label class="nombreUsuario">Nombre perfil</label>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#fff;"><</a>
+      </div>
+        <a href="inicio.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="misTareas.html"><i class="fas fa-clipboard-list"></i> Mis tareas</a>
+        <a href="#"><i class="fas fa-shipping-fast"></i> Tracking</a>
+        <a href="#"><i class="fas fa-chart-pie"></i> Gr&aacute;ficos</a>
+        <a href="#">Opci&oacute;n 5</a>
+        <a href="#">Opci&oacute;n 6</a>
+      </div>
+
+    <div class="contenedor" id="main">
+      <div class="menuSuperior" id="menuSuperior">
+        <i class="fas fa-bars" id="hamburguesa" onclick="openNav()"></i>
+        <img src="./imagenes/logo2.png" alt="Logo empresarial" id="imgLogo" onload="ajustaLogo()">
+        <div>
+          <i class="fas fa-bell" id="campana" onclick="window.location='notificaciones.html'"></i>
+          <i class="fas fa-exclamation-circle" id="numNotificaciones"></i>
+        </div>
+      </div>
+      <div class="menuAtajos">
+        <ul class="listaAtajos">
+          <li><a href="#">Atajo 1</a></li>
+          <li><a href="#">Atajo 2</a></li>
+          <li><a href="#">Atajo 3</a></li>
+        </ul>
+      </div>
+      <div class="menuTarjetas">
+        <button type="button" class="btn" onclick="window.location='misTareas.html'"><i class="fas fa-clipboard-list fa-2x"></i> Mis tareas</button>
+        <button type="button" class="btn"><i class="fas fa-shipping-fast fa-2x"></i> Tracking</button>
+        <button type="button" class="btn"><i class="fas fa-chart-pie fa-2x"></i> gr&aacute;ficos</button>
+      </div>
+    </div>
+  </body>
+</html>
