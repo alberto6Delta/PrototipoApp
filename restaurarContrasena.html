@@ -17,24 +17,22 @@
   </head>
   <body>
     <div class="contenedor" id="contenedor">
-      <div class="logo">
-        <img id="logo" src="./imagenes/logo2.png" alt="Logotipo empresarial" onload="ajustaImg()">
-      </div>
       <div class="saludo">
+        <img id="logo" src="./imagenes/logoObligatorio.jpg" alt="Logotipo empresarial" onload="ajustaImg()">
         <p>Por favor ingresa tu correo electrónico o número de cliente</p>
       </div>
       <div class="formularioLogin">
         <form>
           <fieldset class="form-group">
-            <label for="usuario" class="login-font bmd-label-floating">Número de cliente o correo electrónico<span style="color:red;">*</span></label>
-            <input type="email" class="inputFormulario form-control" id="usuario" autocomplete="off">
+            <label for="usuario" class="login-font bmd-label-floating texto-blanco">Número de cliente o correo electrónico<span>*</span></label>
+            <input type="email" class="inputFormulario form-control texto-bl-secundario" id="usuario" autocomplete="off">
             <span class="login-font bmd-help"></span>
           </fieldset>
         </form>
         <div class="btnLogin">
-          <button type="button" class="btn btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Recuperar contraseña</button>
+          <button type="button" class="btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Recuperar contraseña</button>
         </div>
-        <div style="font-size: 30px; margin-top:60px">
+        <div style="font-size: 45px; margin-top:60px; color:white;">
           <p>Recibirás un correo con los pasos a seguir para recuperar tu contraseña.</a>
         </div>
       </div>

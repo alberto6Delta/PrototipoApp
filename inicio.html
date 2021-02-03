@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <script src="./js/encabezado.js"></script>
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/inicio.css">
     <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
   </head>
   <body>
+
+
 
     <div id="sideNavigation" class="sidenav">
       <div class="encabezadoHamburguesa">
@@ -32,26 +33,34 @@
         <a href="#">Opci&oacute;n 6</a>
       </div>
 
-    <div class="contenedor" id="main">
+    <div class="contenedor-blanco" id="main">
       <div class="menuSuperior" id="menuSuperior">
         <i class="fas fa-bars" id="hamburguesa" onclick="openNav()"></i>
-        <img src="./imagenes/logo2.png" alt="Logo empresarial" id="imgLogo" onload="ajustaLogo()">
+        <img src="./imagenes/logoObligatorio.jpg" alt="Logo empresarial" id="imgLogo" onload="ajustaLogo()">
+        <label class="titulo-pagina">Inicio</label>
         <div>
           <i class="fas fa-bell" id="campana" onclick="window.location='notificaciones.html'"></i>
           <i class="fas fa-exclamation-circle" id="numNotificaciones"></i>
         </div>
       </div>
+
       <div class="menuAtajos">
-        <ul class="listaAtajos">
-          <li><a href="#">Atajo 1</a></li>
-          <li><a href="#">Atajo 2</a></li>
-          <li><a href="#">Atajo 3</a></li>
-        </ul>
+        <div class="ihome">
+          <a href="#"> <i class="fas fa-home"></i></a>
+        </div>
+        <div class="listaAtajos">
+          <ul>
+            <li style="margin-left: 100px; margin-right: 400px;">Atajo 1</li>
+            <li>Atajo 2</li>
+          </ul>
+        </div>
       </div>
+
+
       <div class="menuTarjetas">
-        <button type="button" class="btn" onclick="window.location='misTareas.html'"><i class="fas fa-clipboard-list fa-2x"></i> Mis tareas</button>
-        <button type="button" class="btn"><i class="fas fa-shipping-fast fa-2x"></i> Tracking</button>
-        <button type="button" class="btn"><i class="fas fa-chart-pie fa-2x"></i> gr&aacute;ficos</button>
+        <button type="button" onclick="window.location='misTareas.html'"><i class="fas fa-clipboard-list fa-2x" style="color: #000;"></i> &nbsp;&nbsp;Mis tareas</button>
+        <button type="button" ><i class="fas fa-shipping-fast fa-2x" style="color: #000;"></i> &nbsp;&nbsp;Tracking</button>
+        <button type="button" ><i class="fas fa-chart-pie fa-2x" style="color: #000;"></i> &nbsp;&nbsp;Monitoreo</button>
       </div>
     </div>
   </body>

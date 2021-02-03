@@ -17,30 +17,31 @@
   </head>
   <body>
     <div class="contenedor" id="contenedor">
-      <div class="logo">
-        <img id="logo" src="./imagenes/logo2.png" alt="Logotipo empresarial" onload="ajustaImg()">
-      </div>
+
       <div class="saludo">
-        <p>¡Hola! bienvenidos a XXXXXXX para ingresar es necesario iniciar sesi&oacute;n.</p>
+        <img src="./imagenes/logoObligatorio.jpg" alt="Logo empresarial">
+        <p>XXXX</p>
+        <p>Buenas tardes</p>
       </div>
+
       <div class="formularioLogin">
         <form>
           <fieldset class="form-group">
-            <label for="usuario" class="login-font bmd-label-floating">Usuario o correo electr&oacute;nico<span style="color:red;">*</span></label>
-            <input type="email" class="inputFormulario form-control" id="usuario" autocomplete="off">
+            <label for="usuario" class="login-font bmd-label-floating texto-blanco">Usuario o correo electr&oacute;nico<span>*</span></label>
+            <input type="email" class="inputFormulario form-control texto-bl-secundario" id="usuario" autocomplete="off" style="margin-bottom: 80px;">
             <span class="login-font bmd-help"></span>
           </fieldset>
           <fieldset class="form-group">
-            <label for="password" class="login-font bmd-label-floating">Contraseña<span style="color:red;">*</span></label>
-            <input type="password" class="inputFormulario form-control" id="password"><span id="toggle-password" class="fas fa-eye fa-3x field-icon"></span>
+            <label for="password" class="login-font bmd-label-floating texto-blanco">Contraseña<span>*</span></label>
+            <input type="password" class="inputFormulario form-control texto-bl-secundario" id="password"><span id="toggle-password" class="fas fa-eye fa-3x field-icon texto-blanco"></span>
             <span class="login-font bmd-help"></span>
           </fieldset>
         </form>
-        <div class="btnLogin">
-          <button type="button" class="btn btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Iniciar Sesi&oacute;n</button>
+        <div style="width:100%; text-align:center; margin-top: 50px">
+          <a href="./restaurarContrasena.html">Olvid&eacute; mi contraseña</a>
         </div>
-        <div style="font-size: 30px; margin-top:60px">
-          <p>Olvid&eacute; mi contraseña <a href="restaurarContrasena.html">¡Recuperala!</a>
+        <div class="btnLogin">
+          <button type="button" class="btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Iniciar sesi&oacute;n</button>
         </div>
       </div>
     </div>

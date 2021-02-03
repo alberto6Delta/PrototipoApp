@@ -1,3 +1,17 @@
+:root{
+  --cafe-fuerte: #a33a05;
+  --cafe-claro: #bf470b;
+  --cafe-ultra-claro: #db916b;
+}
+
+
+.titulo-pagina{
+  color:#fff;
+  font-size: 45px;
+  margin-left: 90px;
+  padding-bottom: 15px;
+}
+
 .field-icon {
   float: right;
   margin-right: 12px;
@@ -10,32 +24,54 @@
 .contenedor {
   width:100%;
   height:100%;
+  background-color: var(--cafe-claro);
 }
 
-.logo{
-  text-align:center;
-  padding-top: 32%;
+.contenedor-blanco{
+  width:100%;
+  height:100%;
 }
 
 .saludo{
-  background-color: #ecd479;
-  margin-top: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  width:100%;
+  height: 400px;
+  text-align: center;
+  background-color: var(--cafe-fuerte);
+  padding-top: 35px;
 }
 
+
+.saludo img{
+  width:24%;
+  margin-bottom: 15px;
+}
+
+
 .saludo p{
-  text-align: center;
-  font-weight:bold;
-  font-size: 37px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .formularioLogin{
-  margin-top: 80px;
+  margin-top: 200px;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.formularioLogin a{
+  font-size: 40px;
+  color: #c4c4c4;
+}
+
+
+.texto-blanco{
+  color:white !important;
+}
+
+.texto-bl-secundario{
+  color: #c4c4c4 !important;
+  border-bottom:2px solid #1c73ff;
 }
 
 .btnLogin{
@@ -45,11 +81,14 @@
 
 
 .btnLogin button{
-    background-color: #e4b320;
+    background-color: var(--cafe-fuerte);
     font-size: 40px;
+    font-weight: bold;
     color: #FFF;
-    border-radius: 20px;
-    padding: 20px 20px 20px 20px;
+    border-radius: 23px;
+    border: 7px solid;
+    padding: 40px 20px 40px 20px;
+    width: 100% !important;
 }
 
 .login-font{
@@ -65,7 +104,7 @@
 
 
 .menuSuperior{
-  background-color: #e4b320;
+  background-color: var(--cafe-claro);
   width:100%;
   height: 100%;
 }
@@ -95,7 +134,7 @@
 
 
 .encabezadoHamburguesa{
-  background-color:#e4b320;
+  background-color: var(--cafe-fuerte);
   width:100%;
   height: 9%;
   padding-top: 25px;
@@ -113,6 +152,9 @@
   color:#fff;
 }
 
+.bold{
+  font-weight:bold;
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -155,3 +197,231 @@
     transition: margin-left 0.5s;
     overflow:hidden;
 }
+
+
+.menuAtajos{
+  width: 100%;
+  margin-bottom: 98px;
+}
+
+.listaAtajos {
+  padding-top: 15px;
+  background-color: #e0e0e0;
+  width: 90%;
+  float: right;
+}
+
+.listaAtajos ul{
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.listaAtajos li{
+  display: inline;
+  font-size: 45px;
+  color: #000;
+}
+
+.listaAtajos li a{
+  color: #000;
+}
+
+.ihome{
+  background-color: red;
+  width: 10%;
+  float: left;
+  text-align: center;
+  font-size: 65px;
+}
+
+.ihome a{
+  color: white;
+}
+
+
+/*------------------------Estilos de inicio-------------------------------------*/
+
+.menuTarjetas{
+  text-align: center;
+}
+
+.menuTarjetas button{
+  font-size: 70px;
+  background-color: var(--cafe-claro);
+  color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  margin: 0 auto;
+  width: 72%;
+  height: 300px;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+/*------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------Estilos misTareas---------------------------------*/
+.divBusqueda{
+  width: 100%;
+  background-color: #e0e0e0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border-top: 5px solid var(--cafe-claro);
+}
+
+
+.divBusqueda i{
+  display: block;
+  float: left;
+  margin-top: 9px;
+  margin-left: 16px;
+  margin-right: 72%;
+}
+
+.divBusqueda a{
+  background-color: #e0e0e0;
+  color: black;
+  font-size: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.divContenido{
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.tabla-misTareas{
+  width: 100%;
+  height: 100%;
+}
+
+.tabla-misTareas tr td{
+  border-collapse: collapse;
+  font-size: 45px;
+  border: 2px solid var(--cafe-ultra-claro);
+}
+
+.fondo-ultra-claro{
+  background-color: var(--cafe-ultra-claro);
+}
+
+.foto{
+  text-align: center;
+  width: 40%;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.foto img{
+  width: 45%;
+}
+
+
+.descripcion {
+  width: 60%;
+  padding-top: 15px;
+}
+
+.estatus{
+  color: #c7c7c7;
+}
+/*------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------Estilos Filtros------------------------------------*/
+.menuFiltros{
+  width: 100%;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.btnFiltro {
+  text-align: left;
+  background-color: var(--cafe-claro) !important;
+  color: white !important;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  margin-top: -11px;
+  margin-bottom: -11px;
+}
+
+
+.listaFiltros{
+  list-style: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.listaFiltros li{
+  font-size: 50px;
+  padding-left: 10px;
+}
+
+.fullScreen {
+  margin-left: -17px;
+  margin-right: -17px;
+}
+/*------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------Estilos Notificaciones---------------------------------*/
+.divActuales{
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.divAnteriores{
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.divAnteriores label{
+  font-size: 51px;
+  font-weight: bold;
+}
+
+.encabezado-notificacion{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.cuerpo{
+  font-size: 35px;
+}
+
+
+.tablaNotificaciones{
+  width: 100%;
+  height: 100%;
+}
+
+.tablaNotificaciones tr td{
+  border-collapse: collapse;
+  border: 2px solid #ffe0b3;
+}
+
+.tablaNotificaciones td{
+  padding-top: 12px;
+}
+
+.listaNotificaciones{
+  list-style: none;
+}
+/*------------------------------------------------------------------------------*/
