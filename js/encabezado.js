@@ -18,12 +18,10 @@ function openNav() {
     document.getElementById("sideNavigation").style.width = "79%";
     document.getElementById("main").style.marginLeft = "79%";
     document.getElementById("main").style.backgroundColor = "#e0e0e0";
-    document.getElementById("menuSuperior").style.backgroundColor = "#cfa31b";
 }
 
 function closeNav() {
     document.getElementById("sideNavigation").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("main").style.backgroundColor = "#fff";
-    document.getElementById("menuSuperior").style.backgroundColor = "#e4b320";
 }

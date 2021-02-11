@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./js/encabezado.js"></script>
+    <script src="./js/misTareas.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@
         <a href="#">Opci&oacute;n 6</a>
       </div>
 
-    <div class="contenedor-blanco" id="main">
+    <div class="contenedor-blanco">
 
 
     <div class="menuSuperior" id="menuSuperior">
@@ -55,8 +56,99 @@
     </div>
     <div class="divBusqueda">
       <i class="fas fa-search fa-3x"></i>
-      <a href="filtros.html">Filtrar ></a>
+      <a href="#" onclick="despliegaFiltros()">Filtrar ></a>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contenedor-blanco" id="main" style="display: none;">
+
+      <div class="menuFiltros">
+        <hr style="width: 100%; height: 5px; color: #bf470b; background-color: #bf470b;">
+        <div id="accordion" style="margin-top: -15px;">
+          <div class="card fullScreen">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btnFiltro" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Filtrar por proceso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <ul class="listaFiltros">
+                  <li class="fondo-ultra-claro">Proceso 1</li>
+                  <li>Proceso 2</li>
+                  <li class="fondo-ultra-claro">Proceso 3</li>
+                  <li>Proceso 4</li>
+                  <li class="fondo-ultra-claro">Proceso 5</li>
+                  <li>Proceso 6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card fullScreen">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="collapsed btnFiltro" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filtrar por estatus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <ul class="listaFiltros">
+                  <li class="fondo-ultra-claro">Estatus 1</li>
+                  <li>Estatus 2</li>
+                  <li class="fondo-ultra-claro">Estatus 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card fullScreen">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="collapsed btnFiltro" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Filtrar por fecha &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <ul class="listaFiltros">
+                  <li class="fondo-ultra-claro">2021</li>
+                  <li>2020</li>
+                  <li class="fondo-ultra-claro">2019</li>
+                  <li>2018</li>
+                  <li class="fondo-ultra-claro">2017</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
       <div class="divContenido">
@@ -64,7 +156,7 @@
           <tbody>
             <tr>
               <td class="foto"><img src="./imagenes/maquinaCoser.jpg" alt="Fotografía ilustrativa"></td>
-              <td class="descripcion fondo-ultra-claro">
+              <td class="descripcion">
                 <ul style="list-style:none;">
                   <li class="bold">Descripci&oacute;n 1</li>
                   <li style="margin-left:90%;">></li>
@@ -84,7 +176,7 @@
             </tr>
             <tr>
               <td class="foto"><img src="./imagenes/antivirus.jpg" alt="Fotografía ilustrativa"></td>
-              <td class="descripcion fondo-ultra-claro">
+              <td class="descripcion">
                 <ul style="list-style:none;">
                   <li class="bold">Descripci&oacute;n 3</li>
                   <li style="margin-left:90%;">></li>
@@ -104,7 +196,7 @@
             </tr>
             <tr>
               <td class="foto"><img src="./imagenes/caja.jpg" alt="Fotografía ilustrativa"></td>
-              <td class="descripcion fondo-ultra-claro">
+              <td class="descripcion">
                 <ul style="list-style:none; padding-top:10px;">
                   <li class="bold">Descripci&oacute;n 5</li>
                   <li style="margin-left:90%;">></li>

@@ -23,12 +23,10 @@
       </div>
       <div class="formularioLogin">
         <form>
-          <fieldset class="form-group">
-            <label for="usuario" class="login-font bmd-label-floating texto-blanco">Número de cliente o correo electrónico<span>*</span></label>
-            <input type="email" class="inputFormulario form-control texto-bl-secundario" id="usuario" autocomplete="off">
-            <span class="login-font bmd-help"></span>
-          </fieldset>
+          <label for="usuario" class="texto-blanco label-en-input" id="lusuario">Número de cliente o correo electrónico<span>*</span></label>
+          <input type="email" class="inputFormulario texto-bl-secundario" id="usuario" autocomplete="off">
         </form>
+        <br><br><br><br>
         <div class="btnLogin">
           <button type="button" class="btnLogin" style="width: 90%" onclick="window.location='inicio.html'">Recuperar contraseña</button>
         </div>
@@ -37,5 +35,16 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      $('#usuario').on('focus', function () {
+        $('#lusuario').css('margin-top','-20px');
+      });
+
+      $('#usuario').on('blur', function () {
+        if($('#usuario').val() === ''){
+          $('#lusuario').css('margin-top','50px');
+        }
+      });
+    </script>
   </body>
 </html>
