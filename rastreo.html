@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./js/encabezado.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  </head>
+  <body>
+
+    <div id="sideNavigation" class="sidenav">
+      <div class="encabezadoHamburguesa">
+        <img src="./imagenes/fotoDePerfil.png" alt="Imagen de perfil" class="fotoPerfil">
+        <label class="nombreUsuario">Nombre perfil</label>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#fff;"><</a>
+      </div>
+        <a href="inicio.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="misTareas.html"><i class="fas fa-clipboard-list"></i> Mis tareas</a>
+        <a href="./rastreo.html"><i class="fas fa-shipping-fast"></i> Tracking</a>
+        <a href="#"><i class="fas fa-chart-pie"></i> Gr&aacute;ficos</a>
+        <a href="#">Opci&oacute;n 5</a>
+        <a href="#">Opci&oacute;n 6</a>
+      </div>
+
+    <div class="contenedor-blanco">
+
+
+    <div class="menuSuperior" id="menuSuperior">
+      <i class="fas fa-bars" id="hamburguesa" onclick="openNav()"></i>
+      <img src="./imagenes/logoObligatorio.jpg" alt="Logo empresarial" id="imgLogo" onload="ajustaLogo()">
+      <label class="titulo-pagina">Rastreo</label>
+      <div>
+        <i class="fas fa-bell" id="campana" onclick="window.location='notificaciones.html'"></i>
+        <i class="fas fa-exclamation-circle" id="numNotificaciones"></i>
+      </div>
+    </div>
+
+    <div class="menuAtajos">
+      <div class="ihome">
+        <a href="./inicio.html"><i class="fas fa-home"></i></a>
+      </div>
+      <div class="listaAtajos">
+        <ul>
+          <li style="margin-left: 100px; margin-right: 300px;"><a href="./rastreo.html">Tracking</a></li>
+          <li><a href="#">Monitoreo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="width: 100%; height: 5px; color: #bf470b; background-color: #bf470b;">
+
+      <div class="divRastreo">
+        <hr class="lineaTiempo">
+        <div class="hitos">
+          <div class="hitoRealizado">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <div class="hitoRealizado">
+            <i class="fas fa-truck-moving"></i>
+          </div>
+          <div class="hitoActual">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="hitoPendiente">
+            <i class="fas fa-home"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="divEntEstimada">
+        <label> Entrega estimada para el d&iacute;a:</label>
+        <label style="font-weight: bold; font-size:51px;">99-XXX-9999 en el transcurso del d&iacute;a</label>
+      </div>
+
+      <hr style="width: 100%; height: 5px; color: #bf470b; background-color: #bf470b;">
+      <div class="div_r_rstatus">
+        <label class="label_r_rstatus">Lunes, 22 de Febrero</label>
+        <table class="tablaEstatus">
+          <tbody>
+            <tr>
+              <td class="campo_hora">16:22</td>
+              <td class="campo_estatus">
+                <label class="bold">Descripci&oacute;n Estatus 1</label><br>
+                <label>Descripci&oacute;n Estatus 2</label>
+              </td>
+              <td class="campo_liga">></td>
+            </tr>
+            <tr>
+              <td class="campo_hora">13:20</td>
+              <td class="campo_estatus">
+                <label class="bold">Descripci&oacute;n Estatus 1</label><br>
+                <label>Descripci&oacute;n Estatus 2</label>
+              </td>
+              <td class="campo_liga">></td>
+            </tr>
+            <tr>
+              <td class="campo_hora">09:20</td>
+              <td class="campo_estatus">
+                <label class="bold">Descripci&oacute;n Estatus 1</label><br>
+                <label>Descripci&oacute;n Estatus 2</label>
+              </td>
+              <td class="campo_liga">></td>
+            </tr>
+          </tbody>
+        </table>
+        <label class="label_r_rstatus">S&aacute;bado, 20 de Febrero</label>
+        <table class="tablaEstatus">
+          <tbody>
+            <tr>
+              <td class="campo_hora">10:10</td>
+              <td class="campo_estatus">
+                <label class="bold">Descripci&oacute;n Estatus 1</label><br>
+                <label>Descripci&oacute;n Estatus 2</label>
+              </td>
+              <td class="campo_liga">></td>
+            </tr>
+            <tr>
+              <td class="campo_hora">08:30</td>
+              <td class="campo_estatus">
+                <label class="bold">Descripci&oacute;n Estatus 1</label><br>
+                <label>Descripci&oacute;n Estatus 2</label>
+              </td>
+              <td class="campo_liga">></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
